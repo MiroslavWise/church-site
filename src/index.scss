@@ -22,8 +22,11 @@ body{
   background-color: inherit
 }
 
-footer{
-  background-color: #f7f1ea !important
+footer, nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #f7f1ea !important
 }
 
 h1 {
@@ -38,8 +41,14 @@ h2{
   background-color: inherit;
 }
 
-.Link {
+.logo{
+    aspect-ratio: 2/0.4;
+    width: 300px;
+    background-color: inherit;
+}
+.Link, .link {
     text-decoration: none;
+    background-color: inherit;
 }
 
 $cursors: 'pointer', 'default';
@@ -58,3 +67,6 @@ $cursors: 'pointer', 'default';
         }
     }
 }
+
+.st0{font-family:'MonotypeCorsiva';}
+.st1{font-size:42.8087px;}
