@@ -1,9 +1,7 @@
 
-export default () => {
 
-        return(
-                <>      
-                        
-                </>
-        )
+export default () => {
+    return(
+        <></>
+    )
 }

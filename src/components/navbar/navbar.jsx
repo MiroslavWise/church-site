@@ -10,7 +10,7 @@ const Navbar = () => {
                         {
                                 pagesLinks.map(item => {
                                         return(
-                                                <Link to={item.path} className="link">{item.name}</Link>
+                                                <Link to={item.path} className="link" key={item.path}>{item.name}</Link>
                                         )
                                 })
                         }

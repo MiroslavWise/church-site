@@ -22,10 +22,10 @@ body{
   background-color: inherit
 }
 
-footer, nav{
+header, nav, footer{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: #f7f1ea !important
 }
 
@@ -42,15 +42,45 @@ h2{
 }
 
 .logo{
-    aspect-ratio: 2/0.4;
+    aspect-ratio: 2/0.5;
     width: 300px;
     background-color: inherit;
+}
+.youtube{
+    background-color: inherit;
+    padding: 0;
 }
 .Link, .link {
     text-decoration: none;
     background-color: inherit;
+    color: #525252cc;
+    &:hover {
+        color: #777272;
+    }
 }
 
+.p-card-header{
+    opacity: 0;
+}
+.p-card-body{
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f7f1ea7a;
+    padding: 0;
+    
+}
+text{
+        color: #52525275;
+        font-size: small;
+        background-color: inherit;
+        padding: 5px 5px;
+    }
 $cursors: 'pointer', 'default';
 .cursor {
     @each $cursor in $cursors {
