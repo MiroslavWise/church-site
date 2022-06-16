@@ -26,7 +26,7 @@ export const PostAbout = memo(({title, description, photo, link}) =>{
         const navigate = useNavigate()
         const header = (
                 <div style={{width: '100%', height:200, }}></div>
-            );
+        );
         return(
                 <>
                 

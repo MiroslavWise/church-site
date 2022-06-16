@@ -37,8 +37,11 @@ h1 {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
 }
 
-h2{
+h2, h4, h3, h5, h6, strong{
   background-color: inherit;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .logo{
@@ -48,6 +51,23 @@ h2{
 }
 .youtube{
     background-color: inherit;
+    padding: 0;
+}
+iframe{
+    background-color: inherit
+}
+.youtube_playlist{
+    background-color: inherit;
+    padding: 10;
+    margin: 10;
+    display: flex;
+    flex-direction: row;
+}
+
+.p-panel-content{
+    background-color: inherit !important;
+    border-color: transparent !important;
+    margin: 0;
     padding: 0;
 }
 .Link, .link {
@@ -100,3 +120,7 @@ $cursors: 'pointer', 'default';
 
 .st0{font-family:'MonotypeCorsiva';}
 .st1{font-size:42.8087px;}
+
+div{
+    background-color: inherit;
+}
