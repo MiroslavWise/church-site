@@ -11,8 +11,8 @@ import 'aos/dist/aos.css';
 
 export const PostAbout = memo(({title, description, photo, link}) =>{
         AOS.init({
-                duration: 500,
-                delay: 100,
+                duration: 300,
+                delay: 0,
                 offset: -30
         });
         const styleCard = {
@@ -29,7 +29,6 @@ export const PostAbout = memo(({title, description, photo, link}) =>{
         );
         return(
                 <>
-                
                         <Card title={title} style={styleCard} header={header} onClick={()=> navigate(link)}  data-aos="fade-up" className="cursor-pointer">
                                 <p className="m-0" style={{lineHeight: '1.5'}}>{description}</p>
                         </Card>
