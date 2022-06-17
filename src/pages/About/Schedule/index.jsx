@@ -1,27 +1,16 @@
 import { Card } from 'primereact/card'
 import { Panel } from 'primereact/panel';
 import { Divider } from 'primereact/divider';
+import {header, styleCard} from '../../../components/funcConst';
 
 import schedule from '../../../pictures/photoAbout/schedule.jpg'
 
 
 export default () => {
-        const styleCard = {
-                width: '100%',
-                backgroundImage: `url(${schedule})`, 
-                backgroundSize: 'cover', 
-                borderRadius: 20,
-                padding: 15,
-                margin: 10,
-        }
-
-        const header = (
-                <div style={{width: '100%', height:200, }}></div>
-        );
 
         return(
                 <div>
-                        <Card header={header} title='РАСПИСАНИЕ СЛУЖЕНИЙ' style={styleCard} ></Card>
+                        <Card header={header} title='РАСПИСАНИЕ СЛУЖЕНИЙ' style={styleCard(schedule)} ></Card>
                         <Panel style={{padding:0, }}>
                                 <h4>ПОНЕДЕЛЬНИК:</h4>
                                 <strong>19:00</strong> – Братская группа (Козел Василий) <br/>
