@@ -1,15 +1,26 @@
+import React from 'react';
 import { Card } from 'primereact/card'
 import { Panel } from 'primereact/panel';
 import { Divider } from 'primereact/divider';
 import {header, styleCard} from '../../../components/funcConst';
+import AOS from 'aos';
 
 import schedule from '../../../pictures/photoAbout/schedule.jpg'
 
 
 export default () => {
+        AOS.init({
+                duration: 700,
+                once: true,
+                offset: -30,
+        });
+        React.useEffect(()=>{
+                document.title = `Расписание служений`;
+        }, [])
+        
 
         return(
-                <div>
+                <div  data-aos="fade-right">
                         <Card header={header} title='РАСПИСАНИЕ СЛУЖЕНИЙ' style={styleCard(schedule)} ></Card>
                         <Panel style={{padding:0, }}>
                                 <h4>ПОНЕДЕЛЬНИК:</h4>

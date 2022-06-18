@@ -1,7 +1,8 @@
 import { Card } from 'primereact/card'
 import { Panel } from 'primereact/panel';
 import styled from 'styled-components';
-import {header, styleCard} from '../../../components/funcConst';
+import {header, styleCard, ScrollTop} from '../../../components/funcConst';
+import {useEffect} from 'react';
 
 import photo from '../../../pictures/photoAbout/confession.jpg'
 
@@ -12,9 +13,13 @@ export default () => {
                 background-color: inherit;
                 padding: 0;
         `
+        useEffect(() => {
+                // ScrollTop()
+                document.title = `Исповедание веры`;
+        }, [])
 
         return(
-                <div>
+                <div data-aos="fade-right">
                         <Card header={header} title='ИСПОВЕДАНИЕ ВЕРЫ' style={styleCard(photo)} ></Card>
                         <Panel style={{padding:0}}>
                         <p>

@@ -2,11 +2,16 @@ import { Card } from 'primereact/card'
 import { Panel } from 'primereact/panel';
 import { Divider } from 'primereact/divider';
 import styled from 'styled-components';
-import {header, styleCard} from '../../../components/funcConst';
+import {header, styleCard, ScrollTop} from '../../../components/funcConst';
+import { useEffect } from 'react';
 
 import photo from '../../../pictures/photoAbout/beliefs.jpg'
 
 export default () => {
+        useEffect(() => {
+                        ScrollTop()
+                        document.title = `Вероучение церкви`;
+        }, [])
         const GrayH5 = styled.h5`
                 color: rgba(0,0,0,0.4);
                 padding-left: 20px;

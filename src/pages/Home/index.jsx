@@ -3,21 +3,15 @@ import { Card } from 'primereact/card'
 import styled from 'styled-components';
 import { Divider } from 'primereact/divider';
 
-import {styleCard} from '../../components/funcConst';
+import {styleCard, StrongLink} from '../../components/funcConst';
 import photo from '../../pictures/homeScreen/church_build.jpg'
 
 export default React.memo(() => {
-        const Strong = styled.a`
-                font-style: italic;
-                font-weight: bold;
-                text-decoration: none;
-                color: rgba(0,0,0,0.4);
-                background-color: inherit;
-                padding: 0;
-                cursor: pointer;
-`
+        React.useEffect(()=>{
+                document.title = `Церковь "Слово Жизни" г. Столин`;
+        }, [])
         const header = (
-                <div style={{width: '100%', height:200, }}></div>
+                <div style={{width: '100%', height:100 }}></div>
         );
         const PLH6 = styled.h6`
                 padding-left: 10px;
@@ -37,7 +31,7 @@ export default React.memo(() => {
                 <>
                 <div style={{display: 'flex', flexDirection: 'row', justifyContent:'space-between'}}>
                         <div style={{width: '48%', padding: 0}}>
-                                <p>Придите ко Мне все труждающиеся и обремененные, и Я успокою вас <Strong href='https://bible.by/verse/40/11/28/' target='_blank'>(Мф.11:28)</Strong></p>
+                                <p>Придите ко Мне все труждающиеся и обремененные, и Я успокою вас <StrongLink href='https://bibleonline.ru/bible/rst66/mat-11.28/' target='_blank'>(Мф.11:28)</StrongLink></p>
                                 <h6>Приходите на наши богослужения, мы будем рады видеть вас</h6>
                                 <br/>
                                 <PLH6>Воскресенье:</PLH6>
@@ -66,7 +60,7 @@ export default React.memo(() => {
                         На утренних служениях у нас бывает около 80 человек.
                         <Divider style={DividerP3M3} />
                         <PLH6>Где вы находитесь?</PLH6>
-                        <Strong target='_blank' href='https://goo.gl/maps/B9zsEnQTYKfYzEZa6'>Наш адрес: 225510, Брестская область,<br /> г.Столин, ул.Советская, д. 94 б</Strong>
+                        <StrongLink target='_blank' href='https://goo.gl/maps/B9zsEnQTYKfYzEZa6'>Наш адрес: 225510, Брестская область,<br /> г.Столин, ул.Советская, д. 94 б</StrongLink>
                         </div>
                 </div>
                 </>

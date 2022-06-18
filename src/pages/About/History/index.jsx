@@ -1,24 +1,18 @@
 import { Card } from 'primereact/card'
 import { Divider } from 'primereact/divider';
 import { Panel } from 'primereact/panel';
-import styled from 'styled-components';
-import {header, styleCard} from '../../../components/funcConst';
+import {header, styleCard, ScrollTop, StrongLink} from '../../../components/funcConst';
+import { useEffect } from 'react';
 
 import photo from '../../../pictures/photoAbout/history.jpg'
 
 export default () => {
-        const Strong = styled.a`
-                font-style: italic;
-                font-weight: bold;
-                text-decoration: none;
-                color: rgba(0, 0, 0, 0.5);
-                background-color: inherit;
-                padding: 0;
-                cursor: pointer;
-`
-
+        useEffect(() => {
+                ScrollTop()
+                document.title = "История Церкви";
+        },[])
         return(
-                <>
+                <div >
                         <Card header={header} title='ИСТОРИЯ ЦЕРКВИ' style={styleCard(photo)} ></Card>
                         <Panel style={{padding:0}}>
                                 <p>
@@ -76,7 +70,7 @@ export default () => {
                                 поддерживать друг друга в добрых изменениях. Для многих это важная поддержка в духовной жизни, особенно если муж или дети не являются верующими. Такое же направление имеют и 
                                 братские встречи, ведь без личного стремления к Богу и благоговения перед Ним невозможно правильно наставлять и вести церковь – важно начинать со своего сердца перед Богом. <strong>В 2014 году</strong> в 
                                 церкви появилась музыкальная группа прославления, которая помогает церкви поклоняться Богу и с еще большей радостью исполнять Его слово: «Пойте Господу, вся земля, благовествуйте изо дня в 
-                                день спасение Его» <Strong href='https://bible.by/fater/13/16/13/' target='_blank'>(1 Пар. 16:23)</Strong>.
+                                день спасение Его» <StrongLink href='https://bibleonline.ru/bible/rst66/1ch-16.23/' target='_blank'>(1 Пар. 16:23)</StrongLink>.
                                 </p>
                                 <br/>
                                 <p>
@@ -87,6 +81,6 @@ export default () => {
                                 <Divider />
                                 <i style={{backgroundColor: 'inherit'}}>Да благословит вас Бог и добро пожаловать в нашу церковь!</i>
                         </Panel>
-                </>
+                </div>
         )
 }
