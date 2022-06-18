@@ -4,17 +4,10 @@ import { Card } from 'primereact/card'
 import 'primeicons/primeicons.css';
 import 'primereact/resources/themes/lara-light-indigo/theme.css';
 import 'primereact/resources/primereact.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 
 
 export const PostAbout = memo(({title, description, photo, link}) =>{
-        AOS.init({
-                duration: 300,
-                delay: 0,
-                offset: -30
-        });
         const styleCard = {
         width: '100%',
         backgroundImage: `url(${photo})`, 
@@ -29,7 +22,7 @@ export const PostAbout = memo(({title, description, photo, link}) =>{
         );
         return(
                 <>
-                        <Card title={title} style={styleCard} header={header} onClick={()=> navigate(link)}  data-aos="fade-up" className="cursor-pointer">
+                        <Card title={title} style={styleCard} header={header} onClick={()=> navigate(link)} className="cursor-pointer">
                                 <p className="m-0" style={{lineHeight: '1.5'}}>{description}</p>
                         </Card>
                 </>

@@ -26,6 +26,7 @@ function App() {
     <footer>
       <text>Религиозная община «Церковь ЕХБ "Слово Жизни" г.Столин»</text>
       <a href='https://www.youtube.com/channel/UCdkoS1EHOQDsUNsEjYEN-vA' className="link" target='_blank '><img src={youtube} alt="youtube" className="youtube"/><text>Наш канал на YouTube</text></a>
+      
     </footer>
   </div>
   )
