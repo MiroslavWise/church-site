@@ -27,5 +27,33 @@ const StrongLink = styled.a`
                 padding: 0;
                 cursor: pointer;
         `
+const Aa = styled.a`
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.5);
+        background-color: inherit;
+        padding: 0;
+        cursor: pointer;
+`
 
-export {header, styleCard, ScrollTop, StrongLink}
+const GrayH5 = styled.h5`
+        color: rgba(0,0,0,0.4);
+        padding-left: 20px;
+`
+const StyleH5 = styled.h5`
+                padding-left: 10px;
+        `
+const Pp10 = styled.a`
+        background-color: inherit;
+        padding-left: 10px;
+`
+const LinkBible = ({link, text}) => {
+        return(
+                <StrongLink target='_blank' href={link}>{text}</StrongLink>
+        )
+}
+const LinkA = ({link, text}) =>{
+        return(
+                <Aa target='_blank' href={link}>{text}</Aa>
+        )
+}
+export {header, styleCard, ScrollTop, StrongLink, GrayH5, StyleH5, Pp10, LinkBible, LinkA}

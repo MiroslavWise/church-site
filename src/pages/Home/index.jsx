@@ -2,11 +2,17 @@ import React from 'react';
 import { Card } from 'primereact/card'
 import styled from 'styled-components';
 import { Divider } from 'primereact/divider';
+import AOS from 'aos';
 
 import {styleCard, StrongLink} from '../../components/funcConst';
 import photo from '../../pictures/homeScreen/church_build.jpg'
 
 export default React.memo(() => {
+        AOS.init({
+                duration: 700,
+                once: true,
+                offset: -30,
+        });
         React.useEffect(()=>{
                 document.title = `Церковь "Слово Жизни" г. Столин`;
         }, [])
@@ -28,8 +34,7 @@ export default React.memo(() => {
                 background-color: inherit;
         `
         const subTitle = (
-                <>
-                <div style={{display: 'flex', flexDirection: 'row', justifyContent:'space-between'}}>
+                <div style={{display: 'flex', flexDirection: 'row', justifyContent:'space-between'}} data-aos="fade-right">
                         <div style={{width: '48%', padding: 0}}>
                                 <p>Придите ко Мне все труждающиеся и обремененные, и Я успокою вас <StrongLink href='https://bibleonline.ru/bible/rst66/mat-11.28/' target='_blank'>(Мф.11:28)</StrongLink></p>
                                 <h6>Приходите на наши богослужения, мы будем рады видеть вас</h6>
@@ -63,17 +68,16 @@ export default React.memo(() => {
                         <StrongLink target='_blank' href='https://goo.gl/maps/B9zsEnQTYKfYzEZa6'>Наш адрес: 225510, Брестская область,<br /> г.Столин, ул.Советская, д. 94 б</StrongLink>
                         </div>
                 </div>
-                </>
                 
         )
         return(
-                <>      
+                <div data-aos="fade-right">      
                         <Card 
                                 header={header} 
-                                title='Друзья, сердечно приглашаем Вас на богослужения!' 
+                                title={<h4 data-aos="fade-right">Друзья, сердечно приглашаем Вас на богослужения!</h4>}
                                 style={styleCard(photo)} 
                                 subTitle={subTitle}
                         ></Card>
-                </>
+                </div>
         )
 })

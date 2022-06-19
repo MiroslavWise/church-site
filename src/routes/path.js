@@ -8,6 +8,8 @@ import About from '../pages/About';
 import News from '../pages/News';
 import Photo from '../pages/Photo';
 import Sermons from '../pages/Sermons';
+        import Childrens from '../pages/Sermons/Preaching/Childrens';
+        import Christmas from '../pages/Sermons/Preaching/Christmas';
 import Contacts from '../pages/Contacts';
 
 const path = [
@@ -21,6 +23,8 @@ const path = [
         {path: '/news',element: <News />},
         {path: '/photo',element: <Photo />},
         {path: '/sermons',element: <Sermons />},
+                {path: '/sermons/childrens',element: <Childrens />},
+                {path: '/sermons/payper-christmas',element: <Christmas />},
         {path: '/contacts',element: <Contacts />},
 
         

@@ -1,10 +1,10 @@
 import { Card } from 'primereact/card'
 import { Divider } from 'primereact/divider';
 import { Panel } from 'primereact/panel';
-import {header, styleCard, ScrollTop, StrongLink} from '../../../components/funcConst';
+import {header, styleCard, ScrollTop, StrongLink} from 'components/funcConst';
 import { useEffect } from 'react';
 
-import photo from '../../../pictures/photoAbout/history.jpg'
+import photo from 'pictures/photoAbout/history.jpg'
 
 export default () => {
         useEffect(() => {
