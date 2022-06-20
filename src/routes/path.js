@@ -10,6 +10,7 @@ import Photo from '../pages/Photo';
 import Sermons from '../pages/Sermons';
         import Childrens from '../pages/Sermons/Preaching/Childrens';
         import Christmas from '../pages/Sermons/Preaching/Christmas';
+        import Farisey from '../pages/Sermons/Preaching/Farisey';
 import Contacts from '../pages/Contacts';
 
 const path = [
@@ -25,6 +26,7 @@ const path = [
         {path: '/sermons',element: <Sermons />},
                 {path: '/sermons/childrens',element: <Childrens />},
                 {path: '/sermons/payper-christmas',element: <Christmas />},
+                {path: '/sermons/farisey',element: <Farisey />},
         {path: '/contacts',element: <Contacts />},
 
         

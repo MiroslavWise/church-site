@@ -25,7 +25,7 @@ export default React.memo(() => {
                                                 onClick={()=>{navigate(item?.navigate)}}
                                                 header={header} 
                                                 title={<h4 style={{paddingLeft: 15, fontWeight: 'revert'}}>{item?.title}</h4>}
-                                                style={styleCard(item?.photo)}
+                                                style={Object.assign(styleCard(item?.photo), item?.positionBG)}
                                                 subTitle={item?.subTitle}
                                                 className='cursor-pointer'
                                         ></Card>

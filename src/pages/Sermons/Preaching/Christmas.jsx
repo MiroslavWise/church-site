@@ -15,7 +15,11 @@ export default React.memo(() => {
 
         return(
                 <div data-aos="fade-right">
-                        <Card header={header} title='Джон Пайпер: Гармония Рождества' style={styleCard(photo)} ></Card>
+                        <Card 
+                                header={header} 
+                                title='Джон Пайпер: Гармония Рождества' 
+                                style={Object.assign(styleCard(photo), {backgroundPositionY: '27 %'})} 
+                        ></Card>
                         <Panel style={{padding:0}}>
                         <p><Pp10/>
                                 Иисус Христос существовал и до зачатия во чреве Марии. Мы с вами до своего зачатия не существовали.
