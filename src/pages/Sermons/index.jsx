@@ -19,7 +19,7 @@ export default React.memo(() => {
         return(
                 <div data-aos="zoom-in">
                         {
-                                preaching.map(item => (
+                                preaching?.map(item => (
                                         <Card
                                                 key={item.title}
                                                 onClick={()=>{navigate(item?.navigate)}}
@@ -31,7 +31,6 @@ export default React.memo(() => {
                                         ></Card>
                                 ))
                         }
-                        
                 </div>
         )
 })

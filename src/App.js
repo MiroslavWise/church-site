@@ -1,6 +1,5 @@
 import { Routes, Route, Link, Navigate } from "react-router-dom";
 import {ThemeProvider} from 'bootstrap';
-import Home from './pages/Home';
 import logo from './pictures/logo/logo.svg'
 import youtube from './pictures/logo/icons8-youtube-play.svg'
 import Navbar from './components/navbar/navbar';

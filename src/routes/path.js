@@ -14,20 +14,20 @@ import Sermons from '../pages/Sermons';
 import Contacts from '../pages/Contacts';
 
 const path = [
-        {path: '/',element: <Home />},
-        {path: '/about',element: <About />},
-                {path: '/about/schedule',element: <Schedule />},
-                {path: '/about/school',element: <School />},
-                {path: '/about/history',element: <History />},
-                {path: '/about/confession',element: <Confession />},
-                {path: '/about/beliefs',element: <Beliefs />},
-        {path: '/news',element: <News />},
-        {path: '/photo',element: <Photo />},
-        {path: '/sermons',element: <Sermons />},
-                {path: '/sermons/childrens',element: <Childrens />},
-                {path: '/sermons/payper-christmas',element: <Christmas />},
-                {path: '/sermons/farisey',element: <Farisey />},
-        {path: '/contacts',element: <Contacts />},
+        {path: '/',element: <Home />, children:[]},
+        {path: 'about',element: <About />},
+                {path: 'about/schedule',element: <Schedule />},
+                {path: 'about/school',element: <School />},
+                {path: 'about/history',element: <History />},
+                {path: 'about/confession',element: <Confession />},
+                {path: 'about/beliefs',element: <Beliefs />},
+        {path: 'news',element: <News />, children:[]},
+        {path: 'photo',element: <Photo />, children:[]},
+        {path: 'sermons',element: <Sermons />},
+                {path: 'sermons/childrens',element: <Childrens />},
+                {path: 'sermons/payper-christmas',element: <Christmas />},
+                {path: 'sermons/farisey',element: <Farisey />},
+        {path: 'contacts',element: <Contacts />, children:[]},
 
         
 ]
