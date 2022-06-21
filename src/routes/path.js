@@ -14,7 +14,7 @@ import Sermons from '../pages/Sermons';
 import Contacts from '../pages/Contacts';
 
 const path = [
-        {path: '/',element: <Home />, children:[]},
+        {path: 'home',element: <Home />, children:[]},
         {path: 'about',element: <About />},
                 {path: 'about/schedule',element: <Schedule />},
                 {path: 'about/school',element: <School />},

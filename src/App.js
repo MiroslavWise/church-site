@@ -1,9 +1,9 @@
 import { Routes, Route, Link, Navigate } from "react-router-dom";
-import {ThemeProvider} from 'bootstrap';
 import logo from './pictures/logo/logo.svg'
 import youtube from './pictures/logo/icons8-youtube-play.svg'
 import Navbar from './components/navbar/navbar';
 import genRouteList from './routes/routes'
+import { useLocation } from 'react-router-dom';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
     <Navbar />
     </header>
     <Routes>
-      <Route path="*" element={<Navigate to={'/'}  exact/>} />
+      <Route path="*" element={<Navigate to={'home'}  exact/>} />
       {
         genRouteList()
       }

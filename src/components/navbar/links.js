@@ -1,5 +1,5 @@
 const pagesLinks = [
-        {path: '/', name: 'Главная'},
+        {path: '/home', name: 'Главная'},
         {path: '/about', name: 'О церкви'},
         // {path: '/news', name: 'Новости'},
         {path: '/photo', name: 'Фото'},
